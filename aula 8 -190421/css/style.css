@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: auto;
+    background-color: azure;
+}
+
+.topContent{
+    display: flex;
+}
+
+.topContentElement{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 5px;
+}
+
+.extra{
+    display: flex;
+    align-self: center; 
+}

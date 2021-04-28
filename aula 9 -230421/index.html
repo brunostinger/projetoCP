@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+		<title>Aula 140421</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="content">
+            <div class="head"><h1>Cadastro de usuário</h1></div>
+            <div class="FormContent">
+                <form action="salvar?" method="POST">   
+                    <label for="nome">Nome</label> <input class="requiredInput" type="text" name="nome" id="nome" required/></p>
+                    <label for="sobrenome">Sobrenome</label> <input class="requiredInput" type="text" name="sobrenome" id="sobrenome" required/></p>
+                    <label>Sexo:</label><br><label>Masculino</label> <input type="radio" name="sexo" id="sexo" value="M"/>  <label>Feminino</label>  <input type="radio" name="sexo" id="sexo" value="F"/></p>
+                    <label for="pais">Pais</label><br>
+                    <select id="pais" name="pais" class="requiredInput" required>
+                        <optgroup label="LA">
+                            <option value="ar">Argentina</option>
+                            <option value="ur">Uruguai</option>
+                            <option value="pr">Paraguai</option>
+                        </optgroup>
+                        <optgroup label="EU">
+                            <option value="pt">Portugal</option>
+                            <option value="ru">Russia</option>
+                        </optgroup>
+                    </select></p>
+                        <label for="mensagem">Observação</label>
+                        <textarea id="mensagem" placeholder="digite a mensagem"  rows="5" class="requiredInput" required> </textarea></p>
+                    <div id="timer" class="counter">Tempo restante para preenchimento: </div>
+                    <button class="submit">Salvar</button>
+                </form>
+            </div>
+         </div>
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
